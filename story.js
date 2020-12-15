@@ -1,6 +1,5 @@
 function test()
 {
-
 var a = document.getElementById('a1').value;
 localStorage.setItem("firstname1",a);
 var b = document.getElementById('a2').value;
@@ -22,9 +21,6 @@ localStorage.setItem("firstname9",i);
 var j = document.getElementById('msg').value;
 localStorage.setItem("firstname10",j);
 }
-
-// document.getElementById('A1').innerHTML = localStorage.getItem("firstname1");
-// document.getElementsByClassName('A1')[0].innerHTML = localStorage.getItem("firstname1");
 function insrt(){
 for(i=0;i<8;i++)
 {
@@ -41,17 +37,15 @@ for(k=0;k<3;k++)
 document.getElementsByClassName('Verb')[k].innerHTML = localStorage.getItem("firstname5");
 }
 document.getElementById('No').innerHTML = localStorage.getItem("firstname6");
-document.getElementById('Ans').innerHTML = localStorage.getItem("abc");
+document.getElementById('Ans').innerHTML = localStorage.getItem("firstname7");
 document.getElementById('Speed').innerHTML = localStorage.getItem("firstname8");
 document.getElementById('Quote').innerHTML = localStorage.getItem("firstname9");
 document.getElementById('Msg').innerHTML = localStorage.getItem("firstname10");
 }
-//yes or no
 function abc(ans)
 {
-localStorage.setItem("abc",ans);
+document.getElementById('result').value=ans;
 }
-//change to null
 function change()
 {
 	for(i=0;i<8;i++)
@@ -68,15 +62,9 @@ for(k=0;k<3;k++)
 {
 document.getElementsByClassName('Verb')[k].innerHTML = "Null";
 }
-
-
-
 document.getElementById('No').innerHTML = "Null";
 document.getElementById('Ans').innerHTML = "Null";
 document.getElementById('Speed').innerHTML = "Null";
 document.getElementById('Quote').innerHTML = "Null";
 document.getElementById('Msg').innerHTML = "This is a meaningful message";
-
-}
-
-	
+}	
