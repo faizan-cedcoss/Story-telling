@@ -7,7 +7,6 @@
 	<style>
 		#s1{
 			background-color: #FFB71E;
-
 		}
 		.upper{
 			width: 80%;
@@ -19,15 +18,12 @@
 			padding-top: 2%;
 			padding-bottom: 2%;
 			border-radius: 25px;
-
 		}
 		.middle{
 			height: 25px;
-		}
-		
+		}		
 		.lower{
-			width: 80%;
-			
+			width: 80%;			
 			background-color: #FFF0D0;
 			text-align: center;
 			padding-top: 5%;
@@ -35,8 +31,6 @@
 			margin: auto;
 			border-radius: 25px;
 			font-size: 26px;
-			/*padding-left: 5%;
-			padding-right: 5%*/;
 		}
 		.label-style{
 			font-size: 26px;
@@ -46,24 +40,20 @@
 			margin: 5px;
 			border-radius: 10px;
 			font-size: 20px;
-
 		}
 		.button-style{
 			font-size: 20px;
 		}
-	</style>
-	
+	</style>	
 </head>
 <body>
 	<section id="s1">
-		<div class="middle">
-			
+		<div class="middle">			
 		</div>
 		<div class="container upper">
 			<img src="logo-form.png" style="width: 300px;height: 150px">
 		</div>
-		<div class="middle">
-			
+		<div class="middle">			
 		</div>
 		<div class="lower">
 			<p style="border-bottom: 2px solid black;font-size: 50px; padding-bottom: 50px;font-weight: 600">Complete the Form - <br>
@@ -82,9 +72,10 @@
 					<label class="label-style">Number</label>
 					<input class="input-style" type="Number" id="no" placeholder="2"><br>
 					<label class="label-style" >Yes or No: &emsp;</label>
-					<input class="input-style" type="radio"  name="ans" value="Yes" onclick="abc(this.value)" >Yes 
-					<input class="input-style" type="radio" name="ans" value="No" onclick="abc(this.value)">No<br>
-					<label class="label-style">Relative speed ends(in -er) &emsp;</label>					
+					<input type="radio" name="ans" id="yes" value="Yes" onclick="abc(this.value)">Yes
+					<input type="radio" name="ans" id="nope" value="No" onclick="abc(this.value)">No<br>
+					<input type="text" class="input-style" id="result" style="display:none">
+					<label class="label-style">Relative speed ends(in -er)&emsp;</label>
 					<select id="speed" class="input-style">
 					<option >Quicker</option>
 					<option >Slower</option>
@@ -99,8 +90,7 @@
 					<br>
 				</form>
 		</div>
-		<div class="container middle">
-			
+		<div class="container middle">			
 		</div>
 	</section>
 <script src="story.js"></script>
